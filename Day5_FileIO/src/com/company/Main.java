@@ -14,11 +14,6 @@ public class Main {
         for(int i = 0; i < textArr.length; i++){
             System.out.println(textArr[i]);
         }
-
-
-//        handler.writeFile("\nbbbb");
-
-
     }
 
     public static void trySample(){
