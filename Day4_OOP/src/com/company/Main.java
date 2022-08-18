@@ -22,5 +22,7 @@ public class Main {
             System.out.println(carList.get(i));
         }
         //c2.drive();
+
+        StaticTest.a = 3;
     }
 }
