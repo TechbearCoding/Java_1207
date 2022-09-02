@@ -36,4 +36,30 @@ SELECT Authors.AuthorName, Authors.AuthorLastName, Books.BookName
 FROM Authors, Books
 WHERE Authors.AuthorId = Books.AuthorId;
 
+CREATE TABLE Genres(
+	GenreID int auto_increment,
+    GenreName varchar(20),
+    PRIMARY KEY(GenreID)
+);
+
+INSERT INTO Genres(GenreName)
+VALUES ("Žanrs1"),
+	   ("Žanrs2"),
+       ("Žanrs3");
+
+
+ALTER TABLE Books
+ADD GenreID int NOT NULL;
+
+UPDATE Books
+SET GenreID = 1
+WHERE BookId = 1 OR BookId = 2;
+
+UPDATE Books
+SET GenreId = 2
+WHERE BookId = 3;
+
+ALTER TABLE Books
+ADD FOREIGN KEY (GenreID) REFERENCES Genres(GenreID);
+
 
