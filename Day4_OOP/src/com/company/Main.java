@@ -10,7 +10,7 @@ public class Main {
         Car c1 = new Car();
         //c1.drive();
 
-        Car c2 = new Car("White");
+        Car c2 = new Car("Red");
         System.out.println(c2);
 
         List<Car> carList = new ArrayList<>();
